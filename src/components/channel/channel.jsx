@@ -17,7 +17,7 @@ const Channel = () => {
         )
         setChannelDetail(dataChannelDetail?.items[0])
         const dataVideos = await ApiService.fetching(
-          `search?channelId=${id}&part=snippet%2Cid&order=date`
+          `search?channelId=${id}&part=snippet&type=video`
         )
         setVideos(dataVideos?.items)
       } catch (error) {
