@@ -118,7 +118,7 @@ const VideoDetail = () => {
             >
               <MarkChatRead />
               {parseInt(
-                VideoDetail?.statistics?.viewCount
+                VideoDetail?.statistics?.commentCount
               ).toLocaleString()}{" "}
               comments
             </Stack>
